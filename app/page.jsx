@@ -3,8 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import supabase from "@/lib/SupabaseClient";
 import { useRouter } from "next/navigation";
-import { gsap } from "gsap"; // Import GSAP
-import { useGSAP } from "@gsap/react";
+
 
 const Page = () => {
   const router = useRouter();
@@ -15,45 +14,12 @@ const Page = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
-  // Refs for animations
   const bannerRef = useRef(null);
   const formRef = useRef(null);
   const headingRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
-  // GSAP Animation
-  useGSAP(() => {
-    gsap.from(bannerRef.current, {
-      duration: 2,
-      x: -500,
-      opacity: 0,
-      ease: "power3.out",
-    });
-
-    gsap.from(headingRef.current, {
-      duration: 1.5,
-      y: -50,
-      opacity: 0,
-      delay: 0.5,
-      ease: "power2.out",
-    });
-
-    gsap.from(formRef.current, {
-      duration: 1.5,
-      opacity: 0,
-      y: 50,
-      delay: 1,
-      ease: "power2.out",
-    });
-
-    gsap.from(toggleButtonRef.current, {
-      duration: 1.5,
-      scale: 0,
-      opacity: 0,
-      delay: 1.5,
-      ease: "elastic.out(1, 0.3)",
-    });
-  }, []);
+  
 
   const handleCreateAccount = async (e) => {
     e.preventDefault();
