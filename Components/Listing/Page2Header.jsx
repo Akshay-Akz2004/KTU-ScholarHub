@@ -1,31 +1,10 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { useGSAP } from '@gsap/react';
 
 const Page2Header = () => {
   const headerRef = useRef(null);
   const imageRef = useRef(null);
   const textRef = useRef(null);
-
-  useGSAP(() => {
-    const tl = gsap.timeline();
-
-    tl.from(imageRef.current, {
-      opacity: 0,
-      x: -200,
-      duration: 1,
-      ease: "power3.out",
-    })
-    .from(textRef.current.children, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: "power3.out",
-      stagger: 0.2, 
-    }, "-=0.5"); 
-  }, []);
-
   return (
     <div ref={headerRef} className='h-full px-6 md:px-28 py-16 w-full flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20'>
       <div

@@ -1,49 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-
 const Hero = () => {
-  useGSAP(() => {
-    const tl = gsap.timeline();
-
-    tl.from("h1", {
-      x: -300,
-      opacity: 0,
-      duration: 1.5,
-      stagger: 0.3,
-      ease: "power3.out",
-    })
-      .from(
-        "p",
-        {
-          y: 50,
-          opacity: 0,
-          duration: 1.2,
-          ease: "power2.out",
-        },
-        "-=1.2"
-      )
-      .from(
-        "button",
-        {
-          scale: 0.8,
-          opacity: 0,
-          duration: 1,
-          ease: "elastic.out(1, 0.75)",
-        },
-        "-=0.5"
-      )
-      .from(
-        ".bg-animate",
-        {
-          y: 100,
-          duration: 1,
-          opacity: 0,
-        },
-        "-=1"
-      );
-  }, []);
 
   return (
     <div className="h-screen w-full p-8 flex flex-col lg:flex-row justify-between">
