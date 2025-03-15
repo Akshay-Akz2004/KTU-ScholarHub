@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KTU Scholar Hub
 
-## Getting Started
+## Project Overview
+KTU Scholar Hub is an online platform designed to empower students by connecting them with instructors for skill-sharing, specifically through short-term courses aimed at exam preparation. This platform fills the current gap for a student-friendly service where skills can be monetized, allowing students to upskill themselves and instructors to offer targeted educational content.
 
-First, run the development server:
+## Need for Project
+While various educational platforms exist, there is no direct service catering to the needs of KTU students looking for crash courses or short-term exam preparation. KTU Scholar Hub was created to bridge this gap by providing a streamlined, efficient means for students to connect with knowledgeable instructors.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Development Approach
+### Tech Stack
+- **Frontend:** ReactJS, Tailwind CSS, Next.js
+- **Backend:** PostgreSQL, Next.js
+- **Admin Panel:** Flutter (for managing courses and categories)
+- **Communication:** Integrated with WhatsApp for direct student-instructor interactions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Objectives
+### Current Objectives
+1. **Connect Students and Instructors:** Facilitate interaction between students looking to upskill and instructors offering relevant, exam-focused crash courses.
+2. **Enable Monetization:** Allow instructors to earn by providing short-term, high-impact courses.
+3. **Streamlined Course Navigation:** Simplify the course selection process through well-organized categories and intuitive navigation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Future Objectives
+- **Seamless Payment Integration:** Plan to add payment gateways for smooth transactions.
+- **Enhanced User Experience:** Implement reviews, ratings, and video-based learning modules.
+- **Advanced Filtering:** Introduce personalized course recommendations and enhanced filtering options.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Push to your fork and submit a pull request
 
-## Learn More
+## License
+This project is licensed under the MIT License.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+For any inquiries or collaboration opportunities, reach out via [WhatsApp Integration] or email.
