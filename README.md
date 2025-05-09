@@ -29,5 +29,4 @@ While various educational platforms exist, there is no direct service catering t
 ## License
 This project is licensed under the MIT License.
 
-## Contact
-For any inquiries or collaboration opportunities, reach out via [WhatsApp Integration] or email.
+
