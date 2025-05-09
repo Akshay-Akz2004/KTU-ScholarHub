@@ -9,7 +9,7 @@ While various educational platforms exist, there is no direct service catering t
 ## Development Approach
 ### Tech Stack
 - **Frontend:** ReactJS, Tailwind CSS, Next.js
-- **Backend:** PostgreSQL, Next.js
+- **Backend:** Supabase, Next.js
 - **Admin Panel:** Flutter (for managing courses and categories)
 - **Communication:** Integrated with WhatsApp for direct student-instructor interactions
 
